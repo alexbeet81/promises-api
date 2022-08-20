@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
-  namespace :api, default: { format: :json } do
+  namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :promise_lists, only: [:index]
+      resources :promise_lists, only: [:index, :show]
     end
   end
 end
