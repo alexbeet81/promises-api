@@ -7,7 +7,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 puts "creating admin"
 
-User.first_or_create!(email: "admin@alex.com",
-                      password: "1234567",
-                      role: User.roles[:admin],
-                      username: "admin")
+# User.first_or_create!(email: "admin@alex.com",
+#                      password: "1234567",
+#                      username: "admin")
