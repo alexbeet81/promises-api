@@ -10,4 +10,12 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  # Devise test helpers
+  include Warden::Test::Helpers
+  Warden.test_mode!
 end
+
+# Folder path for screeshots
+Capybara.save_path = Rails.root.join("tmp/capybara")
+# set up headless chrome which will not use the chrome part of chrome
+# Capybara.javascript_driver = :headless_chrome
