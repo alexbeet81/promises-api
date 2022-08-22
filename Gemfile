@@ -61,6 +61,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "dotenv-rails"
   gem "launchy"
+  gem "rspec-rails"
+  gem "faker"
 end
 
 group :development do
@@ -79,4 +81,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "factory_bot_rails"
 end
