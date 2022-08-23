@@ -3,7 +3,6 @@ class Api::V1::PromiseListsController < Api::V1::BaseController
   before_action :set_promise_list, only: [:show, :update, :destroy]
 
   def index
-    p "index"
     @promise_lists = policy_scope(PromiseList)
   end
 
@@ -39,7 +38,6 @@ class Api::V1::PromiseListsController < Api::V1::BaseController
   private
 
   def promise_list_params
-    p "PARAMS HERE #{params[:id]}"
     params.require(:promise_list).permit(:title, :description)
   end
 
