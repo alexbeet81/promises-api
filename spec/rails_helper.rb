@@ -67,4 +67,6 @@ RSpec.configure do |config|
 
   # Include the ApiHelper module
   config.include ApiHelpers
+  config.include UserHelpers
+  config.include JSONAPI::RSpec
 end

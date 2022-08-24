@@ -17,6 +17,7 @@ RSpec.describe "Promise Lists", type: :request do
     end
 
     it "returns status code 200" do
+      p response
       expect(response).to have_http_status(:success)
     end
   end
